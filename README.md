@@ -1,15 +1,41 @@
-Primero, importamos las bibliotecas pandas, requests y plotly.graph_objs porque necesitamos herramientas para manejar datos, hacer solicitudes a APIs, y crear gráficos, respectivamente.
+# Visualización de Indicadores de Desarrollo Sostenible para El Salvador
 
-Definimos cargar_datos_excel(ruta_archivo), una función para cargar un archivo Excel. Usamos pandas para leer el archivo, convertimos la columna 'Año' a formato de fecha, la establecemos como índice del DataFrame, y luego retornamos este DataFrame.
+Este proyecto está diseñado para obtener y visualizar una serie de indicadores socioeconómicos, ambientales y de delincuencia de El Salvador, vinculándolos a los Objetivos de Desarrollo Sostenible (ODS) de las Naciones Unidas. Utiliza datos disponibles públicamente a través de las APIs del Banco Mundial.
 
-La función obtener_datos(url) hace una solicitud a una URL (que es una API) usando requests. Si la respuesta es exitosa (código 200), intentamos convertir los datos JSON a un DataFrame de pandas, seleccionando solo las columnas 'date' y 'value', renombrándolas a 'Año' y 'Valor', convirtiendo 'Año' a formato de fecha, estableciéndola como índice y descartando filas sin datos. Si algo sale mal, imprimimos un error.
+## Características
 
-Establecemos ruta_archivo_delincuencia con la ruta de un archivo Excel y lo cargamos usando cargar_datos_excel.
+- Obtención de datos en tiempo real de varias APIs.
+- Limpieza y preparación de datos para análisis.
+- Visualización de series de tiempo para cada indicador.
+- Agrupación de indicadores según su ODS correspondiente.
 
-Definimos varias URLs que apuntan a diferentes indicadores económicos y sociales disponibles a través de la API del Banco Mundial, preparándonos para obtener esos datos.
+## Tecnologías Utilizadas
 
-Utilizamos obtener_datos(url) para cada URL definida, almacenando los DataFrames resultantes en variables correspondientes a cada indicador.
+- Python 3
+- Pandas: Para el manejo de datos.
+- Requests: Para realizar solicitudes HTTP.
+- Plotly: Para la visualización de datos.
 
-Inicializamos una figura de plotly para crear un gráfico interactivo y luego agregamos a este gráfico diferentes series de datos correspondientes a cada uno de los indicadores, como el PIB, el crecimiento económico, etc., usando fig.add_trace.
+## Cómo Funciona
 
-Finalmente, configuramos el layout del gráfico con un título, etiquetas para los ejes, y un título para la leyenda. Muestramos el gráfico usando fig.show().
+1. **Obtención de Datos:** Se realizan solicitudes HTTP a las APIs del Banco Mundial para obtener los datos de los indicadores de interés para El Salvador.
+2. **Preparación de Datos:** Los datos obtenidos se limpian, preparan y organizan en DataFrames de Pandas para su análisis.
+3. **Visualización:** Se generan gráficas de series de tiempo para cada indicador, agrupadas según el ODS al que están asociadas.
+
+## Cómo Usarlo
+
+1. Asegúrate de tener instalado Python 3 y las librerías mencionadas.
+2. Clona este repositorio en tu máquina local.
+3. Ejecuta el script principal para ver las visualizaciones.
+
+```python
+python main.py
+```
+
+## Contribuir
+
+Las contribuciones son siempre bienvenidas. Si tienes alguna sugerencia para mejorar este proyecto, por favor, abre un issue o envía un pull request.
+
+## Licencia
+
+Este proyecto está bajo la licencia [MIT](https://opensource.org/licenses/MIT). Siente libre de usarlo, modificarlo y distribuirlo.
