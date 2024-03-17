@@ -56,7 +56,7 @@ urls = {
     "Homicidios<br>(por cada 100.000 hab)" : "http://api.worldbank.org/v2/country/SLV/indicator/VC.IHR.PSRC.P5?date=1994:2024&format=json",
     "Emisiones de carbono" : "http://api.worldbank.org/v2/country/SLV/indicator/EN.ATM.CO2E.KT?date=1994:2024&format=json",
     "Acceso a la electricidad" : "http://api.worldbank.org/v2/country/SLV/indicator/EG.ELC.ACCS.ZS?date=1994:2024&format=json",
-    "Electricidad provenientes de<br>fuentes de energías renovable" : "http://api.worldbank.org/v2/country/SLV/indicator/EG.ELC.RNWX.KH?date=1994:2024&format=json",
+    "Electricidad provenientes de<br>fuentes de energías renovables" : "http://api.worldbank.org/v2/country/SLV/indicator/EG.ELC.RNWX.KH?date=1994:2024&format=json",
     "Acceso a Internet" : "http://api.worldbank.org/v2/country/SLV/indicator/IT.NET.USER.ZS?date=1994:2024&format=json",
     "Uso telefonía móvil" : "http://api.worldbank.org/v2/country/SLV/indicator/IT.CEL.SETS.P2?date=1994:2024&format=json",
     "Uso Banda Ancha" : "http://api.worldbank.org/v2/country/SLV/indicator/IT.NET.BBND.P2?date=1994:2024&format=json"
