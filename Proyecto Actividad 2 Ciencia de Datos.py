@@ -49,7 +49,7 @@ urls = {
     "Tasa de desempleo" : "http://api.worldbank.org/v2/country/SLV/indicator/SL.UEM.TOTL.ZS?date=1994:2024&format=json",
     "Gasto Público" : "http://api.worldbank.org/v2/country/SLV/indicator/GC.XPN.TOTL.GD.ZS?date=1994:2024&format=json",
     "Nivel de pobreza" : "http://api.worldbank.org/v2/country/SLV/indicator/SI.POV.DDAY?date=1994:2024&format=json",
-    "Mortalidad niños < 5 años" : "http://api.worldbank.org/v2/country/SLV/indicator/SI.POV.DDAY?date=1994:2024&format=json",
+    "Mortalidad niños < 5 años" : "http://api.worldbank.org/v2/country/SLV/indicator/SH.DYN.MORT?date=1994:2024&format=json",
     "Distribución de los ingresos" : "http://api.worldbank.org/v2/country/SLV/indicator/SI.POV.GINI?date=1994:2024&format=json",
     "Tasa Alfabetización" : "http://api.worldbank.org/v2/country/SLV/indicator/SE.ADT.LITR.ZS?date=1994:2024&format=json",
     "Mujeres en el parlamento" : "http://api.worldbank.org/v2/country/SLV/indicator/SG.GEN.PARL.ZS?date=1994:2024&format=json",
